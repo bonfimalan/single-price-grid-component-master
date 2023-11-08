@@ -1,0 +1,49 @@
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background-color: var(--light-gray);
+}
+
+.grid-container {
+    display: grid;
+    width: 720px;
+    height: 50vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "join join"
+        "sub why"
+    ;
+}
+
+.join-section {
+    background-color: black;
+    grid-area: join;
+}
+
+.subscription-section {
+    background-color: aqua;
+    grid-area: sub;
+}
+
+.why-us-section {
+    background-color: bisque;
+    grid-area: why;
+}
