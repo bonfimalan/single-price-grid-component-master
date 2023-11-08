@@ -47,3 +47,15 @@
     background-color: bisque;
     grid-area: why;
 }
+
+@media only screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "join"
+        "sub"
+        "why"
+    ;
+    }
+}
